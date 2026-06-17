@@ -15,3 +15,4 @@ print(d)
 
 t="string'"
 print(type(t), t)
+
