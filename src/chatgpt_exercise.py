@@ -231,9 +231,7 @@ print(servers)
 # Задача 4
 
 # Создай кортеж:
-
 # server = ("dc01", "10.0.10.10", 443)
-
 # Выведи все элементы по индексам.
 
 server = ("dc01", "10.0.10.10", 443)
@@ -244,3 +242,70 @@ type((1))
 tuple = (1,)
 print(tuple)
 print(type(tuple))
+
+# Задача 6
+#
+# Есть список:
+# # groups = [
+#     "Domain Users",
+#     "Domain Users",
+#     "Domain Admins",
+#     "Backup Operators",
+#     "Domain Admins"
+# ]
+# # Получи множество уникальных групп.
+
+groups = [
+    "Domain Users",
+    "Domain Users",
+    "Domain Admins",
+    "Backup Operators",
+    "Domain Admins"
+]
+
+unique_groups = set(groups)
+unique_groups2 = list(set(groups))# преобразование списка в множество (set), и обратно в список, при этом дубли удаляются
+print("set:", unique_groups)
+print("list:", unique_groups2)
+print()
+
+# Задача 7
+#
+# Для множеств:
+# a = {"ivan", "petr", "alex"}
+# b = {"alex", "sergey"}
+# Найди:
+# объединение;
+# пересечение;
+# разность;
+# симметрическую разность.
+a = {"ivan", "petr", "alex"}
+b = {"alex", "sergey"}
+print(a)
+print(b)
+print("Объединение(|):", a | b)
+print("Пересечение(&):", a & b)
+print("Разность(-):", a - b)
+print("Симметрическая Разность(^):", a ^ b)
+print()
+
+# Dict (словарь)
+#
+# Задача 8
+#  Создай словарь пользователя:
+# # user = {
+#     "name": "Ivan",
+#     "age": 35,
+#     "city": "Karlsruhe"
+# }
+# # Выведи: имя, возраст.
+
+
+user = {
+     "name": "Ivan",
+     "age": 35,
+     "city": "Novgorod"
+ }
+print(user["name"],"\b,", user["age"])
+print(f"{user['name']}, {user['age']}")
+
